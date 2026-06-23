@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wie ich aus dem täglichen Geschwisterstreit ausgestiegen bin – eine Mutter erzählt</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --primary:#B1654F;
+    --secondary:#605829;
+    --heading:#605829;
+    --body:#F6F1E9;
+    --ink:#3a3526;
+    --tint:#f5efe6;
+    --tint-primary:rgba(177,101,79,0.07);
+    --tint-secondary:rgba(96,88,41,0.06);
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:'Nunito',-apple-system,system-ui,sans-serif;
+    background:#FFFFFF;
+    color:var(--ink);
+    font-size:18px;
+    line-height:1.7;
+    margin:0;
+    padding-bottom:96px;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,h4{font-family:'Fredoka',sans-serif;color:var(--heading);}
+  h1{font-size:clamp(2.25rem,5.5vw,3.75rem)!important;font-weight:700!important;line-height:1.1!important;}
+  h2{font-size:clamp(1.9rem,4vw,2.6rem)!important;font-weight:700!important;line-height:1.15!important;}
+  h3{font-size:clamp(1.4rem,2.5vw,1.75rem)!important;font-weight:600!important;line-height:1.2!important;}
+  p{margin:0 0 1.1em;}
+  .wrap{max-width:680px;margin:0 auto;padding:0 20px;}
+  .eyebrow{font-size:13px;text-transform:uppercase;letter-spacing:0.08em;color:var(--primary);font-weight:700;font-family:'Nunito',sans-serif;}
+  .section{padding:80px 0;}
+  .section-sm{padding:56px 0;}
+  figure{margin:20px 0;}
+  figcaption{font-size:14px;color:#8a8472;margin-top:10px;text-align:center;font-style:italic;}
+  .img16{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:16px;display:block;}
+  .callout{
+    background:var(--tint-primary);
+    border-left:4px solid var(--primary);
+    border-radius:12px;
+    padding:26px 28px;
+    margin:28px 0;
+    font-size:1.25rem;
+    font-style:italic;
+    color:var(--secondary);
+    font-family:'Fredoka',sans-serif;
+    line-height:1.4;
+  }
+  .reco-item,.fail-item{display:flex;gap:16px;align-items:flex-start;margin-bottom:20px;}
+  .ic{flex:0 0 auto;width:34px;height:34px;border-radius:50%;background:var(--tint-primary);display:flex;align-items:center;justify-content:center;margin-top:2px;}
+  .ic svg{width:18px;height:18px;stroke:var(--primary);}
+  .feature-grid{display:grid;grid-template-columns:1fr;gap:20px;margin-top:32px;}
+  @media(min-width:760px){.feature-grid{grid-template-columns:repeat(3,1fr);}}
+  .fcard{background:#fff;border:1px solid rgba(0,0,0,0.07);border-radius:18px;padding:28px 24px;box-shadow:0 4px 24px rgba(0,0,0,0.05);}
+  .fbadge{width:40px;height:40px;border-radius:50%;background:var(--primary);color:#fff;display:flex;align-items:center;justify-content:center;font-family:'Fredoka',sans-serif;font-weight:700;font-size:18px;margin-bottom:16px;}
+  .ftag{font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);font-weight:700;}
+  .timeline{margin-top:32px;position:relative;}
+  .tstep{display:flex;gap:20px;padding-bottom:34px;position:relative;}
+  .tstep:not(:last-child)::before{content:"";position:absolute;left:21px;top:44px;bottom:0;width:2px;background:rgba(177,101,79,0.22);}
+  .tnum{flex:0 0 auto;width:44px;height:44px;border-radius:50%;background:var(--primary);color:#fff;display:flex;align-items:center;justify-content:center;font-family:'Fredoka',sans-serif;font-weight:600;font-size:15px;z-index:1;}
+  .btn{
+    display:inline-flex;align-items:center;justify-content:center;gap:10px;
+    background:var(--primary);color:#fff;font-weight:700;font-family:'Fredoka',sans-serif;
+    padding:17px 34px;border-radius:12px;text-decoration:none;font-size:1.1rem;
+    box-shadow:0 6px 20px rgba(177,101,79,0.28);transition:transform .15s ease,background .15s ease;
+  }
+  .btn:hover{background:#9a5340;transform:translateY(-2px);}
+  .btn svg{width:20px;height:20px;}
+  .offer{background:var(--tint);border:1px solid rgba(0,0,0,0.06);border-radius:24px;padding:32px;box-shadow:0 10px 40px rgba(0,0,0,0.07);}
+  @media(min-width:760px){.offer{padding:44px;}}
+  .offer-body{display:grid;grid-template-columns:1fr;gap:28px;}
+  @media(min-width:680px){.offer-body{grid-template-columns:1fr 1fr;align-items:center;}}
+  .prod-sheet{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:16px;box-shadow:0 8px 30px rgba(0,0,0,0.12);}
+  .check{display:flex;gap:12px;align-items:flex-start;margin-bottom:16px;}
+  .check svg{flex:0 0 auto;width:22px;height:22px;margin-top:3px;}
+  .stars{display:inline-flex;gap:2px;}
+  .stars svg{width:20px;height:20px;fill:#E8A23D;}
+  .price-old{text-decoration:line-through;color:#9b9483;font-size:1.3rem;font-weight:600;}
+  .price-new{font-size:2.6rem;font-weight:700;color:var(--secondary);font-family:'Fredoka',sans-serif;line-height:1;}
+  .meta-row{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:24px;}
+  .meta-cell{border:1px solid rgba(0,0,0,0.08);border-radius:12px;padding:12px;text-align:center;font-size:13px;color:#7a7464;background:#fff;}
+  .meta-cell strong{display:block;color:var(--secondary);font-family:'Fredoka',sans-serif;font-size:15px;}
+  .reviews-grid{display:grid;grid-template-columns:1fr;gap:18px;margin-top:28px;}
+  @media(min-width:680px){.reviews-grid{grid-template-columns:1fr 1fr;}}
+  .rcard{background:#fff;border:1px solid rgba(0,0,0,0.07);border-radius:16px;padding:24px;box-shadow:0 4px 18px rgba(0,0,0,0.04);}
+  .ravatar{width:46px;height:46px;border-radius:50%;object-fit:cover;}
+  .bar-row{display:flex;align-items:center;gap:10px;margin-bottom:7px;font-size:13px;color:#7a7464;}
+  .bar-track{flex:1;height:8px;background:rgba(0,0,0,0.07);border-radius:6px;overflow:hidden;}
+  .bar-fill{height:100%;background:var(--primary);border-radius:6px;}
+  .faq-item{border-bottom:1px solid rgba(0,0,0,0.1);}
+  .faq-q{width:100%;text-align:left;background:none;border:none;padding:22px 0;font-family:'Fredoka',sans-serif;font-size:1.15rem;color:var(--secondary);font-weight:600;display:flex;justify-content:space-between;align-items:center;gap:16px;cursor:pointer;}
+  .faq-q svg{flex:0 0 auto;width:20px;height:20px;stroke:var(--primary);transition:transform .25s ease;}
+  .faq-item.open .faq-q svg{transform:rotate(180deg);}
+  .faq-a{max-height:0;overflow:hidden;transition:max-height .3s ease;}
+  .faq-a p{padding-bottom:22px;margin:0;color:var(--ink);}
+  table{width:100%;border-collapse:collapse;}
+  th,td{padding:16px 14px;text-align:left;border-bottom:1px solid rgba(0,0,0,0.08);font-size:15px;}
+  th{font-family:'Fredoka',sans-serif;font-size:15px;}
+  .col-win{background:var(--tint-primary);}
+  . tick{width:20px;height:20px;}
+  .sticky-bar{
+    position:fixed;left:0;right:0;bottom:0;z-index:50;
+    background:rgba(255,255,255,0.96);backdrop-filter:blur(8px);
+    border-top:1px solid rgba(0,0,0,0.08);box-shadow:0 -4px 20px rgba(0,0,0,0.07);
+    padding:12px 16px;
+    display:flex;align-items:center;justify-content:space-between;gap:14px;
+  }
+  .sticky-bar .sb-text{font-family:'Fredoka',sans-serif;font-weight:600;color:var(--secondary);font-size:15px;line-height:1.2;}
+  .sticky-bar .sb-text span{display:block;font-family:'Nunito',sans-serif;font-weight:400;font-size:13px;color:#8a8472;}
+  @media(max-width:540px){
+    .sticky-bar .sb-text{display:none;}
+    .sticky-bar .btn{width:100%;padding:15px;}
+  }
+  .reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease;}
+  .reveal.in{opacity:1;transform:none;}
+  @media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none;}}
+  .bg-sec{background:var(--tint-secondary);}
+</style>
+</head>
+<body>
+
+<!-- AD DISCLOSURE -->
+<div style="background:#f0ebe0;text-align:center;padding:7px;font-size:12px;letter-spacing:0.08em;color:#8a8472;text-transform:uppercase;font-weight:600;">Anzeige</div>
+
+<!-- EDITORIAL HEADER -->
+<header class="wrap" style="padding-top:48px;">
+  <p class="eyebrow" style="text-align:center;">Familienleben · Erfahrungsbericht</p>
+  <h1 style="text-align:center;margin:14px 0 18px;">„Unsere Kinder haben sich jeden Nachmittag gestritten – und am Ende stritten mein Mann und ich.“</h1>
+  <p style="text-align:center;font-size:1.2rem;color:#6c6655;max-width:600px;margin:0 auto 28px;">Wie eine Mutter aus Würzburg in 30 Tagen aus dem Kreislauf aus Geschrei, Schuldgefühl und Paarstreit ausgestiegen ist – ohne Erziehungsratgeber-Marathon.</p>
+  <div style="display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap;color:#8a8472;font-size:14px;border-top:1px solid rgba(0,0,0,0.08);border-bottom:1px solid rgba(0,0,0,0.08);padding:14px 0;">
+    <img src="https://nyrslifytgbluamxpqzq.supabase.co/storage/v1/object/public/website-images/peace-reset-ad/author-avatar_1782223311932.png" alt="Porträt von Jana K." style="width:40px;height:40px;border-radius:50%;object-fit:cover;">
+    <span><strong style="color:var(--secondary);">Jana K.</strong>, Mutter von drei Kindern</span>
+    <span style="opacity:.5;">·</span>
+    <span>Lesedauer: 7 Min.</span>
+  </div>
+</header>
+
+<!-- HERO IMAGE -->
+<div class="wrap">
+  <figure>
+    <img class="img16" src="https://nyrslifytgbluamxpqzq.supabase.co/storage/v1/object/public/website-images/peace-reset-ad/hero-scene_1782223311932.png" alt="Erschöpfte Mutter zwischen streitenden Geschwistern am Nachmittag">
+    <figcaption>Der Nachmittag, an dem ich beschlossen habe: So kann es nicht weitergehen.</figcaption>
+  </figure>
+</div>
+
+<!-- HOOK -->
+<section class="section-sm">
+  <div class="wrap reveal">
+    <p>Es war ein ganz normaler Dienstag, halb fünf. Ich stand in der Küche, schnitt Gurken für das Abendessen und hörte aus dem Wohnzimmer das vertraute Geräusch: erst ein Quietschen, dann ein „Das ist meins!“, dann Geschrei. Innerhalb von zehn Sekunden weinte das Jüngste, der Mittlere brüllte, und die Große schlug die Tür zu.</p>
+    <p>Ich legte das Messer weg, atmete einmal tief durch – und schrie dann selbst. Lauter, als ich wollte. So laut, dass alle drei für einen Moment erschrocken still waren. Und dann fing alles wieder von vorn an.</p>
+    <p>Als mein Mann zwanzig Minuten später nach Hause kam, sagte er nur einen Satz: „Musst du immer gleich so explodieren?“ Und damit hatten wir unseren eigenen Streit. Wieder einmal saßen wir abends auf der Couch, schweigend, jeder gekränkt – während die Kinder längst schliefen, als wäre nichts gewesen.</p>
+    <p>Ich erzähle das hier so genau, weil ich heute weiß: Es lag nicht an meinen Kindern. Und es lag nicht daran, dass ich eine schlechte Mutter bin. Es lag an einem Muster, das ich nicht durchschaut hatte.</p>
+  </div>
+</section>
+
+<!-- RECOGNITION -->
+<section class="section bg-sec">
+  <div class="wrap reveal">
+    <p class="eyebrow">Kommt dir das bekannt vor?</p>
+    <h2 style="margin:12px 0 28px;">Vielleicht kennst du diese Momente auch</h2>
+    <div class="reco-item">
+      <span class="ic"><svg fill="none" stroke-width="2" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      <p style="margin:0;">Du verbringst den ganzen Nachmittag als Schiedsrichterin zwischen den Kindern – wer hat angefangen, wer darf was, wer war zuerst da.</p>
+    </div>
+    <div class="reco-item">
+      <span class="ic"><svg fill="none" stroke-width="2" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      <p style="margin:0;">Abends im Bett kommt das Schuldgefühl: „Ich habe heute wieder zu laut reagiert.“</p>
+    </div>
+    <div class="reco-item">
+      <span class="ic"><svg fill="none" stroke-width="2" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      <p style="margin:0;">Dein Partner reagiert bei genau demselben Streit ganz anders als du – und die Kinder spüren sofort, wo sie ansetzen müssen.</p>
+    </div>
+    <div class="reco-item">
+      <span class="ic"><svg fill="none" stroke-width="2" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      <p style="margin:0;">Aus einem Kinderstreit wird ein Paarstreit – und plötzlich geht es gar nicht mehr um das Spielzeug.</p>
+    </div>
+    <div class="reco-item">
+      <span class="ic"><svg fill="none" stroke-width="2" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      <p style="margin:0;">Du sehnst dich einfach nach einem Nachmittag, an dem niemand schreit – auch du nicht.</p>
+    </div>
+  </div>
+</section>
+
+<!-- AGITATION -->
+<section class="section">
+  <div class="wrap reveal">
+    <h2 style="margin-bottom:8px;">Was mich wirklich fertiggemacht hat</h2>
+    <p>Was die Streitereien zwischen den Kindern an sich waren, hätte ich noch ausgehalten. Geschwister streiten – das ist normal, das habe ich immer gewusst. Was mich ausgehöhlt hat, war etwas anderes: das Gefühl, dass es nie aufhört und dass ich es nie richtig mache.</p>
+    <p>Ich war den ganzen Tag angespannt. Schon morgens beim Frühstück lauerte ich darauf, wer als Erster anfängt. Mein Körper war ständig in Alarmbereitschaft. Und je angespannter ich war, desto schneller bin ich explodiert – über Dinge, die es eigentlich gar nicht wert waren.</p>
+    <p>Am schlimmsten war das, was es mit meinem Mann und mir gemacht hat. Wir waren mal ein Team. Aber zwischen all dem Geschrei wurden wir zu zwei Menschen, die sich gegenseitig vorhielten, wer falscher reagiert. Er fand mich zu streng, ich fand ihn zu nachgiebig. Und die Kinder – die hatten längst gelernt, dass sie bei Papa anders durchkommen als bei Mama.</p>
+    <p>Abends auf der Couch dachte ich oft: Wir verlieren gerade etwas. Nicht laut, nicht in einem großen Knall. Sondern leise, Nachmittag für Nachmittag.</p>
+  </div>
+  <div class="wrap">
+    <figure>
+      <img class="img16" src="https://nyrslifytgbluamxpqzq.supabase.co/storage/v1/object/public/website-images/peace-reset-ad/couch-tension_1782223311932.png" alt="Eltern sitzen abends schweigend auf der Couch">
+      <figcaption>Abends, wenn die Kinder schliefen, war zwischen uns oft Funkstille.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- FAILED ATTEMPTS -->
+<section class="section bg-sec">
+  <div class="wrap reveal">
+    <p class="eyebrow">Was ich alles probiert habe</p>
+    <h2 style="margin:12px 0 28px;">Und warum nichts davon wirklich half</h2>
+    <div class="fail-item">
+      <span class="ic"><svg fill="none" stroke-width="2" viewBox="0 0 24 24"><path d="M6 18L18 6M6 6l12 12" stroke-linecap="round"/></svg></span>
+      <div><strong style="color:var(--secondary);font-family:'Fredoka',sans-serif;">Die dicken Erziehungsratgeber.</strong><p style="margin:6px 0 0;">300 Seiten Theorie, schön geschrieben. Aber nach einem langen Tag hatte ich keine Kraft mehr, mir abends noch ein Kapitel zu erarbeiten – und im Streitmoment fiel mir kein einziger Satz daraus ein.</p></div>
+    </div>
+    <div class="fail-item">
+      <span class="ic"><svg fill="none" stroke-width="2" viewBox="0 0 24 24"><path d="M6 18L18 6M6 6l12 12" stroke-linecap="round"/></svg></span>
+      <div><strong style="color:var(--secondary);font-family:'Fredoka',sans-serif;">Konsequenter sein.</strong><p style="margin:6px 0 0;">Mehr Regeln, mehr Strenge, mehr „so läuft das hier“. Es funktionierte zwei Tage. Dann war ich wieder die Böse, und mein Mann fing die Kinder mit Nachgiebigkeit wieder auf.</p></div>
+    </div>
+    <div class="fail-item">
+      <span class="ic"><svg fill="none" stroke-width="2" viewBox="0 0 24 24"><path d="M6 18L18 6M6 6l12 12" stroke-linecap="round"/></svg></span>
+      <div><strong style="color:var(--secondary);font-family:'Fredoka',sans-serif;">Sofort dazwischengehen.</strong><p style="margin:6px 0 0;">Ich war bei jedem Streit sofort zur Stelle. Was ich nicht merkte: So lernten die Kinder nie, einen kleinen Konflikt selbst zu lösen. Ich war immer schneller als sie.</p></div>
+    </div>
+    <div class="fail-item">
+      <span class="ic"><svg fill="none" stroke-width="2" viewBox="0 0 24 24"><path d="M6 18L18 6M6 6l12 12" stroke-linecap="round"/></svg></span>
+      <div><strong style="color:var(--secondary);font-family:'Fredoka',sans-serif;">Mit meinem Mann „reden“.</strong><p style="margin:6px 0 0;">Wir nahmen uns hundert Mal vor, an einem Strang zu ziehen. Aber im echten Moment, mit drei lauten Kindern, fielen wir doch wieder in unsere alten Rollen zurück. Wir hatten nie einen gemeinsamen Plan – nur gute Vorsätze.</p></div>
+    </div>
+    <p style="margin-top:8px;">Erst viel später verstand ich, warum nichts davon reichte: Jeder dieser Versuche packte nur eine Ebene an. Die Kinder. Oder mich. Oder uns als Paar. Aber in einer echten Familie hängt all das zusammen.</p>
+  </div>
+</section>
+
+<!-- LOW POINT -->
+<section class="section">
+  <div class="wrap reveal">
+    <h2 style="margin-bottom:8px;">Der Moment, an dem ich nicht mehr konnte</h2>
+    <p>Es war ein Sonntag. Eigentlich der Tag, an dem alles schön sein sollte. Stattdessen eskalierte um die Mittagszeit ein Streit über die Fernbedienung so heftig, dass am Ende alle drei Kinder weinten, ich im Schlafzimmer saß und mein Mann wortlos mit dem Hund spazieren ging.</p>
+    <p>Ich saß auf der Bettkante und dachte ehrlich: Ich liebe meine Familie über alles – aber ich halte diese Stimmung in unserem Haus nicht mehr aus.</p>
+    <div class="callout">„Ich war nicht überfordert, weil ich zu wenig liebte. Ich war überfordert, weil mir niemand gezeigt hatte, wie man diesen Kreislauf durchbricht.“</div>
+  </div>
+</section>
+
+<!-- DISCOVERY -->
+<section class="section bg-sec">
+  <div class="wrap reveal">
+    <p class="eyebrow">Der Wendepunkt</p>
+    <h2 style="margin:12px 0 8px;">Ein Satz, der alles verändert hat</h2>
+    <p>Eine befreundete Erzieherin sagte mir an diesem Abend etwas, das ich nie vergessen werde: „Ihr versucht, drei Probleme einzeln zu lösen. Aber in deiner Familie sind sie ein einziges.“</p>
+    <p>Die Kinder streiten. Ihr reagiert. Und dann streitet ihr als Eltern darüber, wie ihr reagiert habt. Es ist ein Kreislauf – und solange man nur an einer Stelle zieht, dreht er sich einfach an der nächsten weiter.</p>
+    <p>Genau dieser Gedanke steckt hinter dem Programm, auf das ich kurz darauf stieß: <strong>Die 30-Tage Familien-Friedens-Reset.</strong> Kein dicker Ratgeber, sondern ein geführtes 30-Tage-Programm mit fertigen Werkzeugen, das genau an allen drei Stellen gleichzeitig ansetzt: bei den Kindern, bei mir, und bei uns als Paar.</p>
+  </div>
+  <div class="wrap">
+    <figure>
+      <img class="img16" src="https://nyrslifytgbluamxpqzq.supabase.co/storage/v1/object/public/website-images/peace-reset-ad/realization_1782223311932.png" alt="Mutter sitzt nachdenklich am Küchentisch mit Notizbuch">
+      <figcaption>Zum ersten Mal hatte ich das Gefühl: Vielleicht liegt es gar nicht an mir, sondern am Plan.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="section">
+  <div class="wrap reveal">
+    <p class="eyebrow">Wie es funktioniert</p>
+    <h2 style="margin:12px 0 8px;">4 Säulen statt eine Baustelle nach der anderen</h2>
+    <p>Was den Unterschied machte, war die Struktur. Das Programm ist in vier Säulen aufgebaut, und jede setzt an einer anderen Stelle des Kreislaufs an – aber alle arbeiten am selben Tag, am selben Problem.</p>
+    <p><strong style="color:var(--secondary);">Kids Calm Down</strong> half meinen Kindern, sich selbst zu beruhigen, bevor sie explodieren – mit Werkzeugen wie dem Wut-Thermometer und 60-Sekunden-Atemübungen, die sogar mein Sechsjähriger versteht.</p>
+    <p><strong style="color:var(--secondary);">Sibling Solve</strong> gab den Kindern eine einfache Methode an die Hand – das Stopp–Sag–Tausch–Schüttel-Prinzip – mit der sie kleine Streits zum ersten Mal selbst regeln konnten, ohne dass ich eingreifen musste.</p>
+    <p><strong style="color:var(--secondary);">Parent Pause</strong> war für mich. Kurze, sehr praktische Routinen, die mir diese eine Sekunde gaben, bevor ich laut wurde. Genau die Sekunde, die mir vorher immer gefehlt hat.</p>
+    <p><strong style="color:var(--secondary);">Parent Team</strong> war das, was mein Mann und ich am dringendsten gebraucht haben: konkrete Skripte und Absprachen, damit wir endlich beide gleich reagieren – statt uns gegenseitig zu untergraben.</p>
+    <p>Das Beste: Es war kein Studium. Jeden Tag eine kleine, umsetzbare Aufgabe mit fertigen Werkzeugen. Keine Vorbereitung, kein Vorwissen. Ich konnte abends in fünf Minuten lesen, was am nächsten Tag dran war.</p>
+
+    <div class="feature-grid">
+      <div class="fcard">
+        <div class="fbadge">1</div>
+        <p class="ftag">Fertige Werkzeuge</p>
+        <h3 style="margin:8px 0 8px;">Sofort einsetzbar</h3>
+        <p style="margin:0;font-size:16px;">Skripte, Gefühlskarten und das Wut-Thermometer liegen fertig bereit – du nutzt sie im echten Moment, ohne nachzudenken.</p>
+      </div>
+      <div class="fcard">
+        <div class="fbadge">2</div>
+        <p class="ftag">Alle drei Ebenen</p>
+        <h3 style="margin:8px 0 8px;">Kind, Eltern, Paar</h3>
+        <p style="margin:0;font-size:16px;">Du arbeitest nicht nur an den Kindern. Auch du und dein Partner bekommen einen klaren, gemeinsamen Weg.</p>
+      </div>
+      <div class="fcard">
+        <div class="fbadge">3</div>
+        <p class="ftag">30 Tage Struktur</p>
+        <h3 style="margin:8px 0 8px;">Eine Aufgabe pro Tag</h3>
+        <p style="margin:0;font-size:16px;">Kleine Schritte statt großer Vorsätze. So wird aus der Theorie eine neue Gewohnheit im Familienalltag.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TIMELINE -->
+<section class="section bg-sec">
+  <div class="wrap reveal">
+    <p class="eyebrow">Was sich verändert hat</p>
+    <h2 style="margin:12px 0 8px;">Unsere 30 Tage – Schritt für Schritt</h2>
+    <div class="timeline">
+      <div class="tstep">
+        <span class="tnum">Tag 1–7</span>
+        <div>
+          <h3 style="margin:0 0 6px;">Die erste ruhige Sekunde</h3>
+          <p style="margin:0;">Ehrlich gesagt war ich skeptisch. Aber schon in der ersten Woche merkte ich, dass ich bei einem Streit kurz innehielt, statt sofort loszuschreien. Diese eine Sekunde fühlte sich riesig an.</p>
+        </div>
+      </div>
+      <div class="tstep">
+        <span class="tnum">Tag 8–14</span>
+        <div>
+          <h3 style="margin:0 0 6px;">Die Kinder probieren es selbst</h3>
+          <p style="margin:0;">Zum ersten Mal sah ich, wie mein Mittlerer und die Große einen kleinen Streit ohne mich beendeten. Ich stand in der Tür und musste fast lachen vor Erleichterung.</p>
+        </div>
+      </div>
+      <div class="tstep">
+        <span class="tnum">Tag 15–21</span>
+        <div>
+          <h3 style="margin:0 0 6px;">Mein Mann und ich – endlich ein Team</h3>
+          <p style="margin:0;">Mit den Parent-Team-Skripten reagierten wir auf einmal beide gleich. Die Kinder konnten uns nicht mehr gegeneinander ausspielen. Und abends auf der Couch redeten wir wieder – über etwas anderes als Erziehung.</p>
+        </div>
+      </div>
+      <div class="tstep">
+        <span class="tnum">Tag 22–30</span>
+        <div>
+          <h3 style="margin:0 0 6px;">Ein anderer Nachmittag</h3>
+          <p style="margin:0;">Die Streitereien sind nicht verschwunden – Geschwister bleiben Geschwister. Aber sie eskalieren nicht mehr. Und ich gehe abends ins Bett, ohne dieses Schuldgefühl. Unser Zuhause fühlt sich wieder wie ein Zuhause an.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMPARISON -->
+<section class="section">
+  <div class="wrap reveal">
+    <h2 style="margin-bottom:24px;">Der alte Nachmittag gegen den neuen</h2>
+    <div style="overflow-x:auto;border:1px solid rgba(0,0,0,0.08);border-radius:16px;">
+      <table>
+        <thead>
+          <tr>
+            <th style="width:42%;">&nbsp;</th>
+            <th>Vorher</th>
+            <th class="col-win">Mit dem Reset</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Beim Streit</strong></td><td>Ich gehe sofort dazwischen und schreie</td><td class="col-win">Die Kinder lösen kleine Konflikte selbst</td></tr>
+          <tr><td><strong>Meine Reaktion</strong></td><td>Explosion, dann Schuldgefühl</td><td class="col-win">Kurz innehalten – dann klar reagieren</td></tr>
+          <tr><td><strong>Als Paar</strong></td><td>Jeder reagiert anders, daraus wird Streit</td><td class="col-win">Ein gemeinsamer Plan, beide ziehen mit</td></tr>
+          <tr><td><strong>Aufwand</strong></td><td>Dicke Ratgeber, keine Zeit, kein Plan</td><td class="col-win">Eine kleine Aufgabe pro Tag, fertige Werkzeuge</td></tr>
+          <tr><td><strong>Abends</strong></td><td>Funkstille auf der Couch</td><td class="col-win">Wieder ein Gespräch zu zweit</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="section bg-sec">
+  <div class="wrap reveal">
+    <p class="eyebrow">Was andere Eltern berichten</p>
+    <h2 style="margin:12px 0 24px;">Nicht nur bei uns</h2>
+    <div style="display:flex;align-items:center;gap:24px;flex-wrap:wrap;margin-bottom:8px;">
+      <div>
+        <div style="font-family:'Fredoka',sans-serif;font-size:3rem;font-weight:700;color:var(--secondary);line-height:1;">4,8</div>
+        <div class="stars" style="margin-top:6px;">
+          <svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-6 4 2 7-6-4-6 4 2-7-6-4h7z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-6 4 2 7-6-4-6 4 2-7-6-4h7z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-6 4 2 7-6-4-6 4 2-7-6-4h7z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-6 4 2 7-6-4-6 4 2-7-6-4h7z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-6 4 2 7-6-4-6 4 2-7-6-4h7z"/></svg>
+        </div>
+        <p style="margin:6px 0 0;font-size:13px;color:#8a8472;">aus geprüften Eltern-Rückmeldungen</p>
+      </div>
+      <div style="flex:1;min-width:220px;">
+        <div class="bar-row"><span>5 ★</span><div class="bar-track"><div class="bar-fill" style="width:84%;"></div></div></div>
+        <div class="bar-row"><span>4 ★</span><div class="bar-track"><div class="bar-fill" style="width:12%;"></div></div></div>
+        <div class="bar-row"><span>3 ★</span><div class="bar-track"><div class="bar-fill" style="width:3%;"></div></div></div>
+        <div class="bar-row"><span>2 ★</span><div class="bar-track"><div class="bar-fill" style="width:1%;"></div></div></div>
+        <div class="bar-row"><span>1 ★</span><div class="bar-track"><div class="bar-fill" style="width:0%;"></div></div></div>
+      </div>
+    </div>
+
+    <div class="reviews-grid">
+      <div class="rcard">
+        <div style="display:flex;gap:12px;align-items:center;margin-bottom:10px;">
+          <img class="ravatar" src="https://nyrslifytgbluamxpqzq.supabase.co/storage/v1/object/public/website-images/peace-reset-ad/review-1_1782223311932.png" alt="Sandra B.">
+          <div><strong style="color:var(--secondary);font-family:'Fredoka',sans-serif;">Sandra B.</strong><div class="stars"><svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-6 4 2 7-6-4-6 4 2-7-6-4h7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-6 4 2 7-6-4-6 4 2-7-6-4h7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-6 4 2 7-6-4-6 4 2-7-6-4h7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-6 4 2 7-6-4-6 4 2-7-6-4h7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-6 4 2 7-6-4-6 4 2-7-6-4h7z"/></svg></div></div>
+        </div>
+        <p style="margin:0;font-size:16px;">„Das Wut-Thermometer hat unseren Großen komplett verändert. Er sagt jetzt selbst, wenn er kurz vorm Ausrasten ist. Das hätte ich nie geglaubt.“</p>
+      </div>
+      <div class="rcard">
+        <div style="display:flex;gap:12px;align-items:center;margin-bottom:10px;">
+          <img class="ravatar" src="https://nyrslifytgbluamxpqzq.supabase.co/storage/v1/object/public/website-images/peace-reset-ad/review-2_1782223311932.png" alt="Markus T.">
+          <div><strong style="color:var(--secondary);font-family:'Fredoka',sans-serif;">Markus T.</strong><div class="stars"><svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-6 4 2 7-6-4-6 4 2-7-6-4h7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-6 4 2 7-6-4-6 4 2-7-6-4h7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-6 4 2 7-6-4-6 4 2-7-6-4h7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-6 4 2 7-6-4-6 4 2-7-6-4h7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-6 4 2 7-6-4-6 4 2-7-6-4h7z"/></svg></div></div>
+        </div>
+        <p style="margin:0;font-size:16px;">„Der Teil für uns Eltern war das Entscheidende. Meine Frau und ich reagieren endlich gleich – die Kinder können uns nicht mehr ausspielen.“</p>
+      </div>
+      <div class="rcard">
+        <div style="display:flex;gap:12px;align-items:center;margin-bottom:10px;">
+          <img class="ravatar" src="https://nyrslifytgbluamxpqzq.supabase.co/storage/v1/object/public/website-images/peace-reset-ad/review-3_1782223311932.png" alt="Nadine R.">
+          <div><strong style="color:var(--secondary);font-family:'Fredoka',sans-serif;">Nadine R.</strong><div class="stars"><svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-6 4 2 7-6-4-6 4 2-7-6-4h7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-6 4 2 7-6-4-6 4 2-7-6-4h7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-6 4 2 7-6-4-6 4 2-7-6-4h7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-6 4 2 7-6-4-6 4 2-7-6-4h7z"/></svg><svg viewBox="0 0 24 24" opacity=".4"><path d="M12 2l3 7h7l-6 4 2 7-6-4-6 4 2-7-6-4h7z"/></svg></div></div>
+        </div>
+        <p style="margin:0;font-size:16px;">„Endlich kein 300-Seiten-Buch. Eine Aufgabe am Tag, fertig. Genau das passt in mein Leben mit drei Kindern.“</p>
+      </div>
+      <div class="rcard">
+        <div style="display:flex;gap:12px;align-items:center;margin-bottom:10px;">
+          <img class="ravatar" src="https://nyrslifytgbluamxpqzq.supabase.co/storage/v1/object/public/website-images/peace-reset-ad/review-4_1782223311932.png" alt="Christina M.">
+          <div><strong style="color:var(--secondary);font-family:'Fredoka',sans-serif;">Christina M.</strong><div class="stars"><svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-6 4 2 7-6-4-6 4 2-7-6-4h7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-6 4 2 7-6-4-6 4 2-7-6-4h7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-6 4 2 7-6-4-6 4 2-7-6-4h7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-6 4 2 7-6-4-6 4 2-7-6-4h7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-6 4 2 7-6-4-6 4 2-7-6-4h7z"/></svg></div></div>
+        </div>
+        <p style="margin:0;font-size:16px;">„Nach Woche drei habe ich zum ersten Mal seit Langem einen ganzen Nachmittag ohne Geschrei erlebt. Ich war richtig gerührt.“</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OFFER -->
+<section class="section">
+  <div class="wrap">
+    <div class="offer reveal" id="offer">
+      <p class="eyebrow">Challenge-Buch + Familien-Toolkit · 30 Tage</p>
+      <h2 style="margin:8px 0 12px;">Die 30-Tage Familien-Friedens-Reset</h2>
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:24px;flex-wrap:wrap;">
+        <span class="stars">
+          <svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-6 4 2 7-6-4-6 4 2-7-6-4h7z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-6 4 2 7-6-4-6 4 2-7-6-4h7z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-6 4 2 7-6-4-6 4 2-7-6-4h7z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-6 4 2 7-6-4-6 4 2-7-6-4h7z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-6 4 2 7-6-4-6 4 2-7-6-4h7z"/></svg>
+        </span>
+        <span style="font-weight:700;color:var(--secondary);">4,8</span>
+        <span style="color:#8a8472;font-size:14px;">· von Eltern geprüft</span>
+      </div>
+
+      <div class="offer-body">
+        <img class="prod-sheet" src="https://nyrslifytgbluamxpqzq.supabase.co/storage/v1/object/public/website-images/peace-reset-ad/product-sheets_1782223311932.png" alt="Die 30-Tage Familien-Friedens-Reset als ausgedruckte Seiten">
+        <div>
+          <div class="check"><svg viewBox="0 0 24 24" fill="none" stroke="#B1654F" stroke-width="2.5"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong style="color:var(--secondary);">4-Säulen-System:</strong> Kids Calm Down · Sibling Solve · Parent Pause · Parent Team.</span></div>
+          <div class="check"><svg viewBox="0 0 24 24" fill="none" stroke="#B1654F" stroke-width="2.5"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong style="color:var(--secondary);">Fertige Werkzeuge:</strong> Wut-Thermometer, Gefühlskarten, Skripte & 60-Sekunden-Atemroutinen.</span></div>
+          <div class="check"><svg viewBox="0 0 24 24" fill="none" stroke="#B1654F" stroke-width="2.5"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong style="color:var(--secondary);">Stopp–Sag–Tausch–Schüttel:</strong> die Methode, mit der Kinder kleine Streits selbst lösen.</span></div>
+          <div class="check"><svg viewBox="0 0 24 24" fill="none" stroke="#B1654F" stroke-width="2.5"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong style="color:var(--secondary);">Eine Aufgabe pro Tag:</strong> ohne Vorbereitung, ohne Vorwissen, direkt umsetzbar.</span></div>
+        </div>
+      </div>
+
+      <div style="display:flex;align-items:center;gap:14px;margin:28px 0 4px;flex-wrap:wrap;">
+        <span class="price-new">EUR 17,95</span>
+        <span class="price-old">EUR 22,95</span>
+        <span style="background:var(--tint-primary);color:var(--primary);font-weight:700;padding:5px 12px;border-radius:20px;font-size:14px;">Du sparst EUR 5,00</span>
+      </div>
+
+      <a class="btn" href="https://hongkong.tentary.com/p/peace-reset" style="width:100%;margin-top:20px;font-size:1.2rem;">
+        Jetzt sichern
+        <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+
+      <div style="margin-top:22px;">
+        <div class="check"><svg viewBox="0 0 24 24" fill="none" stroke="#B1654F" stroke-width="2.5"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg><span style="font-size:15px;">Sofort nach dem Kauf verfügbar – du kannst noch heute mit Tag 1 starten.</span></div>
+        <div class="check"><svg viewBox="0 0 24 24" fill="none" stroke="#B1654F" stroke-width="2.5"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg><span style="font-size:15px;">Für Familien mit 2–4 Kindern im Alter von 4–12 Jahren entwickelt.</span></div>
+        <div class="check"><svg viewBox="0 0 24 24" fill="none" stroke="#B1654F" stroke-width="2.5"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg><span style="font-size:15px;">Qualitätsversprechen: durchdacht aufgebaut und praxiserprobt für den echten Familienalltag.</span></div>
+      </div>
+
+      <div class="meta-row">
+        <div class="meta-cell"><strong>30 Tage</strong>geführtes Programm</div>
+        <div class="meta-cell"><strong>4 Säulen</strong>Kind · Eltern · Paar</div>
+        <div class="meta-cell"><strong>32–40 S.</strong>plus Toolkit</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section bg-sec">
+  <div class="wrap reveal">
+    <p class="eyebrow">Häufige Fragen</p>
+    <h2 style="margin:12px 0 20px;">Das fragen sich viele Eltern</h2>
+
+    <div class="faq-item">
+      <button class="faq-q">Funktioniert das auch bei uns? Unsere Kinder streiten wirklich viel.<svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M6 9l6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      <div class="faq-a"><p>Genau für solche Familien ist das Programm gemacht. Es geht nicht darum, Streit komplett abzuschaffen – Geschwister streiten, das ist normal. Es geht darum, dass Streit nicht mehr eskaliert und nicht mehr auf euch als Paar überschwappt. Viele Eltern berichten schon in den ersten Wochen von ruhigeren Nachmittagen.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q">Ich habe abends kaum Zeit. Wie viel Aufwand ist das?<svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M6 9l6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      <div class="faq-a"><p>Es ist bewusst alltagstauglich gehalten: eine kleine, umsetzbare Aufgabe pro Tag, die du in wenigen Minuten erfassen kannst. Keine langen Theoriekapitel, keine Vorbereitung. Die Werkzeuge sind fertig – du setzt sie direkt im echten Moment ein.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q">Muss mein Partner mitmachen?<svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M6 9l6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      <div class="faq-a"><p>Es wirkt am stärksten, wenn beide mitziehen – genau deshalb gibt es die Säule „Parent Team“ mit gemeinsamen Skripten und Absprachen. Du kannst aber auch allein starten und vieles davon zeigt schon Wirkung, weil es bei dir und den Kindern ansetzt.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q">Für welches Alter ist das geeignet?<svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M6 9l6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      <div class="faq-a"><p>Das Programm ist für Familien mit 2–4 Kindern im Alter von etwa 4 bis 12 Jahren entwickelt. Die Werkzeuge wie das Wut-Thermometer und die Gefühlskarten sind so gestaltet, dass sie auch jüngere Kinder verstehen.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q">Ist das wieder ein dicker Erziehungsratgeber?<svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M6 9l6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      <div class="faq-a"><p>Nein – und das ist der entscheidende Unterschied. Es ist ein geführtes 30-Tage-Challenge-Format mit fertigen Werkzeugen, kein 300-Seiten-Buch zum Durcharbeiten. Statt Theorie bekommst du jeden Tag einen konkreten, praktischen Schritt.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q">Was bekomme ich genau und wann?<svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M6 9l6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      <div class="faq-a"><p>Du erhältst das vollständige 30-Tage Challenge-Buch (32–40 Seiten) samt Familien-Toolkit mit allen Werkzeugen. Es ist direkt nach dem Kauf für dich verfügbar, sodass du noch heute mit Tag 1 beginnen kannst.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section style="background:var(--primary);color:#fff;padding:72px 0;">
+  <div class="wrap" style="text-align:center;">
+    <h2 style="color:#fff;margin-bottom:16px;">Stell dir einen Nachmittag ohne Geschrei vor</h2>
+    <p style="color:rgba(255,255,255,0.92);font-size:1.2rem;max-width:560px;margin:0 auto 28px;">Nicht perfekt – aber ruhig. Kinder, die kleine Streits selbst lösen. Du und dein Partner, wieder ein Team. In 30 Tagen kannst du diesem Zuhause Schritt für Schritt näherkommen.</p>
+    <a class="btn" href="https://hongkong.tentary.com/p/peace-reset" style="background:#fff;color:var(--primary);">
+      Jetzt sichern
+      <svg viewBox="0 0 24 24" fill="none" stroke="#B1654F" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+    <p style="color:rgba(255,255,255,0.8);font-size:14px;margin-top:18px;">EUR 17,95 statt EUR 22,95 · sofort verfügbar</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer style="background:#2f2b1f;color:#b8b3a3;padding:40px 0;">
+  <div class="wrap" style="text-align:center;">
+    <p style="font-family:'Fredoka',sans-serif;color:#e8e3d4;font-size:1.1rem;margin-bottom:10px;">Die 30-Tage Familien-Friedens-Reset</p>
+    <p style="font-size:13px;line-height:1.6;margin-bottom:14px;">Dieser Beitrag ist ein Erfahrungsbericht und enthält werbliche Inhalte (Anzeige). Geschilderte Erlebnisse sind persönliche Erfahrungen und keine Garantie für individuelle Ergebnisse, da jede Familie unterschiedlich ist. Das Programm ersetzt keine pädagogische oder therapeutische Beratung im Einzelfall.</p>
+    <p style="font-size:12px;color:#8a8472;">© 2024 Familien-Friedens-Reset · Alle Rechte vorbehalten</p>
+  </div>
+</footer>
+
+<!-- STICKY BAR -->
+<div class="sticky-bar">
+  <div class="sb-text">30 Tage zu einem ruhigeren Zuhause<span>EUR 17,95 statt EUR 22,95</span></div>
+  <a class="btn" href="#offer">
+    Jetzt ansehen
+    <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5"><path d="M12 5v14M6 13l6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </a>
+</div>
+
+<script>
+  // FAQ accordion
+  document.querySelectorAll('.faq-q').forEach(function(btn){
+    btn.addEventListener('click',function(){
+      var item=btn.parentElement;
+      var ans=item.querySelector('.faq-a');
+      var open=item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(function(o){
+        o.classList.remove('open');
+        o.querySelector('.faq-a').style.maxHeight=null;
+      });
+      if(!open){
+        item.classList.add('open');
+        ans.style.maxHeight=ans.scrollHeight+'px';
+      }
+    });
+  });
+  // reveal on scroll
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});
+  },{threshold:0.12});
+  document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
+</script>
+
+</body>
+</html>
